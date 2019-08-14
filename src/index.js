@@ -9,8 +9,9 @@ import ReactDOM from "react-dom";
 //npm install bootstrap
 import "bootstrap/dist/css/bootstrap.css";
 import Badge from "./components/Badge";
+import BadgeNew from './pages/BadgeNew';
 
 const container = document.getElementById("app");
 
 //render optiene dos argumentos(El que, y el donde)
-ReactDOM.render(<Badge firstName="Ahsoka" lastName="Tano" />, container);
+ReactDOM.render(<BadgeNew />, container);
