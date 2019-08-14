@@ -5,6 +5,13 @@ import confLogo from "../images/badge-header.svg";
 
 class Badge extends React.Component {
   render() {
+    
+    //   Los props que es la forma corta de properties son argumentos de una función y en este caso serán los atributos de nuestro componente como class, src, etc
+    // Estos props salen de una variable de la clase que se llama this.props y los valores son asignados directamente en el ReactDOM.render().
+
+    const firstName = "Anakyn";
+    const lastName = "Anakin Skywalker";
+
     return (
       <div className="Badge">
         <div className="Badge__header">
@@ -18,7 +25,7 @@ class Badge extends React.Component {
             alt="Avatar"
           />
           <h1>
-            Diego <br /> Tejedor
+            {this.props.firstName} <br /> {this.props.lastName}
           </h1>
         </div>
 

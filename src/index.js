@@ -13,4 +13,4 @@ import Badge from "./components/Badge";
 const container = document.getElementById("app");
 
 //render optiene dos argumentos(El que, y el donde)
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(<Badge firstName="Ahsoka" lastName="Tano" />, container);
