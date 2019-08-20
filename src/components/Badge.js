@@ -3,6 +3,8 @@ import React from "react";
 import "./styles/Badge.css";
 import confLogo from "../images/badge-header.svg";
 
+import Gravatar from "./Gravatar";
+
 class Badge extends React.Component {
   render() {
     //   Los props que es la forma corta de properties son argumentos de una función y en este caso serán los atributos de nuestro componente como class, src, etc
@@ -15,9 +17,10 @@ class Badge extends React.Component {
         </div>
 
         <div className="Badge__section-name">
-          <img
+          <Gravatar
             className="Badge__avatar"
-            src={this.props.avatarUrl}
+            email={this.props.email}
+            //src={this.props.avatarUrl}
             alt="Avatar"
           />
           <h1>
